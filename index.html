@@ -18,27 +18,58 @@
             list-style: none;
         }
 
+
+        body{
+            font-family: poppins;
+            font-size: medium;
+            font-style: normal;
+           
+        }
+
+        .logo{
+            padding: 16px;
+        }
+
         .container {
             display: flex;
             flex-direction: column;
             height: 100vh;
+            background-color: #F6F0E4;
         }
 
         .header {
             display: flex;
             justify-content: space-between;
-            color: rgb(233, 240, 246);
-            background-color: rgb(41, 41, 41);
-            padding: 10px;
+            align-items: center;
+            color: #64022D
+            background-color:white
+            padding: 20px;
         }
 
         .menu-nav {
             display: flex;
-            gap: 10px;
+            gap: 20px;
+        }
+
+        .botones{
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            
+        }
+
+        .boton-principal{
+            padding: 8px;
+            padding-right: 16px;
+            padding-left: 16px;
+            background-color: #64022D;
+            color: #F6F0E4;
+            border-radius: 20px;
+
         }
 
         .menu-nav a {
-            color: aliceblue;
+            color: #64022D
         }
 
         .contenido {
@@ -72,14 +103,22 @@
 
         <div class="header">
 
-            <div class="logo"> Logo </div>
+            <div class="logo"> <img src="/imágenes/Sofrito logo.png" alt=""></div>
 
             <ul class="menu-nav">
-                <li> <a href="https://search.brave.com/search?q=w3"> X </a> </li>
-                <li> <a href="https://search.brave.com/search?q=w3"> X </a> </li>
-                <li> <a href="https://search.brave.com/search?q=w3"> Acceso </a> </li>
-                <li> <a href="https://search.brave.com/search?q=w3"> Únete </a> </li>
+                <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
+                <li> <a href="https://search.brave.com/search?q=w3"> Recetas </a> </li>
+                <li> <a href="https://search.brave.com/search?q=w3">Foro</a> </li>
+                <li> <a href="https://search.brave.com/search?q=w3"> Eventos </a> </li>
             </ul>
+
+            
+                <ul class="botones">
+                    <li id="registro">Únete</li>
+                    <li class="boton-principal">Acceso</li>
+                </ul>
+
+            
 
         </div>
 
