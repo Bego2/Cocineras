@@ -50,13 +50,13 @@
         .menu-nav {
             display: flex;
             gap: 72px;
-            
+
         }
 
-        .menu-nav li :hover{
+        .menu-nav li :hover {
             font-size: larger;
             font: bold;
-            
+
         }
 
         .botones {
@@ -85,49 +85,34 @@
         .contenido {
             display: flex;
             flex: 1;
+            padding: 40px;
 
         }
 
-        .call-action { 
-            background-image: url('img/callfood.png');
-            background-size: cover;
-            background-position: center;
+       
 
-            display: flex;
-            height: 100vh;
-            width: 100vw;
-            padding: 20px;
-         
-          
-            justify-content: center;
-            align-items: center;
-            color: #64022D;
-    
+
+        .terminostxt {
+            color: #64022d;
         }
 
-        h4 {
-            font-size: large;
+        .terminostit {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 12px;
             font-weight: 100;
-        }
-
-        #botoncall {
-            padding: 8px;
-            padding-right: 16px;
-            padding-left: 16px;
-            background-color: #64022d;
-            color: #F6F0E4;
-            border-radius: 20px;
-            border-style: none;
-            font-family: poppins;
-            margin-top: 15px;
+            margin-top: 30px;
+            margin-bottom: 30px;
         }
 
         .footer {
-            background-color:  #64022d;
+            background-color: #64022d;
             color: #F6F0E4;
             padding: 20px;
             display: flex;
-          
+
         }
 
         #txtfooter {
@@ -136,14 +121,14 @@
             justify-content: space-between;
             align-content: center;
             font-size: small;
-            font-weight:100;
-            letter-spacing: 1px;        
+            font-weight: 100;
+            letter-spacing: 1px;
+
         }
 
-        #txtfooter a { 
-            color: #F6F0E4;          
+        #txtfooter a {
+            color: #F6F0E4;
         }
-
     </style>
 
 </head>
@@ -155,7 +140,7 @@
 
         <div class="header">
 
-            <div class="logo"> <img src="/img/logo.png" alt=""></div>
+            <div class="logo" > <a href="index.html">  <img src="/img/logo.png" alt="" > </a></div>
 
             <ul class="menu-nav">
                 <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
@@ -165,13 +150,13 @@
             </ul>
 
 
-                <ul class="botones">
-                    <li id="registro">Únete</li>
-                    <li> <button>Acceso</button></li>
-                </ul>
+            <ul class="botones">
+                <li id="registro">Únete</li>
+                <li> <button>Acceso</button></li>
+            </ul>
 
 
-           
+
             </ul>
 
 
@@ -179,34 +164,34 @@
         </div>
 
         <div class="contenido">
+            
+            <div class="terminostxt">
+                <h2 class="terminostit"> Términos y Condiciones generales </h2>
 
-            <div class="call-action"> 
-                <div id="call-items">
-
-                    
-                    <h4> Estás en el lugar correcto. 
-                    <br> Esta es la comunidad donde compartirás ideas y dudas, <br> probarás nuevos sabores y encontrarás inspiración. 
-                    <br> <br>¡Qué sofrito tan rico y enriquecedor! 
-                    </h4>
-                    <button id="botoncall"> Únete </button>
-                </div>
+                <p>
+                    Al utilizar este sitio web, aceptas:
+                    <br> <br>
+                    1. Responsabilidad de tus publicaciones: Eres el único responsable del contenido que publicas. <br>
+                    Asegúrate de que tus recetas sean originales o que tengas los derechos necesarios para compartirlas.
+                    <br><br>
+                    2. Respeto a otros usuarios: Trata a todos los usuarios con respeto. <br> Los comentarios ofensivos
+                    o inapropiados serán eliminados.
+                    <br> <br>
+                    3. Uso de la información: La información que compartes puede ser utilizada por otros usuarios para
+                    fines no comerciales.
+                </p>
             </div>
+
         </div>
 
         <div class="footer">
             <ul id="txtfooter">
-                <li> Sofrito® 2024 Created by Cocineras  </li>
+                <li> Sofrito® 2024 Created by Cocineras </li>
                 <li> Cookies </li>
                 <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
-              
+
             </ul>
         </div>
 
 
     </div>
-
-
-
-</body>
-
-</html>
