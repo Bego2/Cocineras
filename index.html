@@ -8,7 +8,7 @@
     <meta name="keywords" content="Cocina, Cocinar, Recetas, Comunidad, España">
     <meta name="author" content="Candela, Luján y Begoña">
 
-    <title> Cocineras [+] </title>
+    <title> Sofrito </title>
 
     <style>
         * {
@@ -43,7 +43,7 @@
             justify-content: space-between;
             align-items: center;
             color: #64022D;
-            background-color: white;
+            background-color: #F6F0E4;
             padding: 20px;
         }
 
@@ -85,14 +85,53 @@
         }
 
         .menu-nav a {
-            color: #64022D
+            color: #64022D;
         }
 
         .contenido {
             display: flex;
             flex: 1;
-            height: 1000px;
-            background-color: rgb(220, 255, 163);
+
+        }
+
+        .call-action {
+           
+            background-image: url('img/call-food.png');
+            /* Reemplaza 'tu-imagen.jpg' por la ruta de tu imagen */
+            display: flex;
+            /* Permite organizar los elementos de forma flexible */
+            background-size: cover;
+            /* Ajusta la imagen para cubrir todo el contenedor */
+            background-position: center;
+            /* Centra la imagen */
+            height: 100vh;
+            width: 100vw;
+            padding: 20px;
+            /* Ocupa toda la altura de la viewport */
+          
+            justify-content: center;
+            /* Centra los elementos horizontalmente */
+            align-items: center;
+            /* Centra los elementos verticalmente*/
+            color: #64022D;
+    
+        }
+
+        h4 {
+            font-size: large;
+            font-weight: 100;
+        }
+
+        #botoncall {
+            padding: 8px;
+            padding-right: 16px;
+            padding-left: 16px;
+            background-color: #64022d;
+            color: #F6F0E4;
+            border-radius: 20px;
+            border-style: none;
+            font-family: poppins;
+            margin-top: 15px;
         }
 
         .footer {
@@ -139,8 +178,17 @@
         </div>
 
         <div class="contenido">
-            <div class="call-action">
-                <img src="comida.jpg" alt="">
+
+            <div class="call-action"> 
+                <div id="call-items">
+
+                    
+                    <h4> Estás en el lugar correcto. 
+                    <br> Esta es la comunidad donde compartirás ideas y dudas, <br> probarás nuevos sabores y encontrarás inspiración. 
+                    <br> <br>¡Qué sofrito tan rico y enriquecedor! 
+                    </h4>
+                    <button id="botoncall"> Únete </button>
+                </div>
             </div>
         </div>
 
