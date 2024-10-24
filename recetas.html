@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Recetas</title>
 
     <style>
         * {
@@ -39,7 +39,6 @@
             justify-content: space-between;
             align-items: center;
             color: #64022D;
-            background-color: white;
             padding: 20px;
         }
 
@@ -76,6 +75,68 @@
 
         }
 
+        .cabecera{
+
+            background-image: url(/img/call-food.png);
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            height: 20vh;
+            padding: 50px;
+            
+          
+            
+
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: #64022D;
+        }
+
+        
+        #txt{
+            display: flex;
+            justify-content: center;
+            color: #64022D;
+            font-size: 20px;
+        }
+        
+
+
+        .cards{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: stretch;
+        }
+
+        .card{
+
+            flex: 0 0 200px;
+            margin: 10px;
+            
+        
+            
+        }
+
+        .card img{
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 10px;
+        }
+
+        .card text{
+            display: flex;
+            flex-direction: column;
+            padding: 0px 20px 20px;
+            
+            
+        }
+
+       
+
     </style>
 
 
@@ -91,7 +152,9 @@
 
         <div class="header">
 
-            <div class="logo"> <img src="/imágenes/Sofrito logo.png" alt=""></div>
+            <div class="logo"> <img src="/img/sofrito-logo.png" alt="Sofrito logo" > 
+                
+            </div>
 
             <ul class="menu-nav">
                 <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
@@ -102,8 +165,8 @@
 
 
             <ul class="botones">
-                <li id="registro">Únete</li>
-                <li> <button>Acceso</button></li>
+                <li id="registro">Mi cuenta</li>
+                <li> <button>Cerrar sesión</button></li>
             </ul>
 
 
@@ -113,6 +176,87 @@
 
 
         </div>
+
+
+        <div class="content">
+
+            <div class="cabecera">
+                <h1>Mis recetas</h1>
+                
+                <p id="txt">¡Bienvenidx a tu colección personal de sabores!</p>
+              
+                </div>
+            <br><br><br>
+
+                <div class="cards">
+
+                        <div class="card">
+                            
+                            <img src="/img/carne.webp" alt="Imagen plato">
+                            <div class="text">
+                                <h3>Nombre del plato</h3>
+                                <p>Descripción</p>
+                                <button>Ver receta completa</button>
+                            </div>
+
+                        
+                        </div>
+
+
+                        <div class="card"><img src="/img/verduras.jpg" alt="">
+                            <div class="text">
+                                <h3>Verde que te quiero verde</h3>
+                                <p>Descubre esta sencilla receta con tan solo 3 pasos</p>
+                                <button>Ver receta completa</button>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="card"><img src="/img/macarrones.webp" alt="">
+                            <div class="text">
+                                <h3>Macarrones marinos</h3>
+                                <p>No dejes de probar esta sencilla receta con un sabor explosivo</p>
+                                <button>Ver receta completa</button>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="card"><img src="/img/pollo.jpeg" alt="">
+                            <div class="text">
+                                <h3>Pollo en salsa de sésamo</h3>
+                                <p>Sólo necesitas 3 ingredientes para cocinar esta riquísima receta</p>
+                                <button>Ver receta completa</button>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="card"><img src="/img/pollo1.webp" alt="">
+                            <div class="text">
+                                <h3>Nombre del plato</h3>
+                                <p>Descripción</p>
+                                <button>Ver receta completa</button>
+                            </div>
+                        
+                        </div>
+
+
+                        <div class="card"><img src="/img/variado.jpeg" alt="">
+                            <div class="text">
+                                <h3>Nombre del plato</h3>
+                                <p>Descripción</p>
+                                <button>Ver receta completa</button>
+                            </div>
+                        
+                        </div>
+
+                </div>
+
+        </div>
+
+
     </div>
 
 </body>
