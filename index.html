@@ -50,20 +50,19 @@
         .menu-nav {
             display: flex;
             gap: 72px;
-            
+
         }
 
-        .menu-nav li :hover{
+        .menu-nav li :hover {
             font-size: larger;
             font: bold;
-            
+
         }
 
         .botones {
             display: flex;
             gap: 40px;
             align-items: center;
-
             padding: 20px;
         }
 
@@ -88,7 +87,7 @@
 
         }
 
-        .call-action { 
+        .call-action {
             background-image: url('img/callfood.png');
             background-size: cover;
             background-position: center;
@@ -96,18 +95,18 @@
             display: flex;
             height: 100vh;
             width: 100vw;
-            padding: 20px;
-         
-          
-            justify-content: center;
+            padding: 150px;
+
+
+            justify-content: left;
             align-items: center;
             color: #64022D;
-    
+
         }
 
-        h4 {
+           h4 {
             font-size: large;
-            font-weight: 100;
+            font-weight: 500;
         }
 
         #botoncall {
@@ -123,11 +122,11 @@
         }
 
         .footer {
-            background-color:  #64022d;
+            background-color: #64022d;
             color: #F6F0E4;
             padding: 20px;
             display: flex;
-          
+
         }
 
         #txtfooter {
@@ -136,14 +135,59 @@
             justify-content: space-between;
             align-content: center;
             font-size: small;
-            font-weight:100;
-            letter-spacing: 1px;        
+            font-weight: 100;
+            letter-spacing: 1px;
         }
 
-        #txtfooter a { 
-            color: #F6F0E4;          
+        #txtfooter a {
+            color: #F6F0E4;
         }
 
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            background-color: #F6F0E4;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 0 0 200px;
+            margin: 10px;
+            border: none;
+        }
+
+        .card img {
+            max-width: 100%
+        }
+
+        .card .text {
+            display: flex;
+            flex-direction: column;
+            padding: 0 20px 20px;
+            color: #64022d;
+            font-size: small;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: poppins;
+            font-weight: 700;
+            color: #64022d;
+            font-size: medium;
+            text-align: center;
+            font-display: 100%;
+        }
+
+        .seccion2 {
+            background-color: #F6F0E4;
+            text-align: center;
+            color: #64022d;
+            font-size: x-large;
+            font-weight: bold;
+            padding-top: 40px;
+        }
     </style>
 
 </head>
@@ -165,13 +209,11 @@
             </ul>
 
 
-                <ul class="botones">
-                    <li id="registro">Únete</li>
-                    <li> <button>Acceso</button></li>
-                </ul>
+            <ul class="botones">
+                <li id="registro">Únete</li>
+                <li> <button>Acceso</button></li>
+            </ul>
 
-
-           
             </ul>
 
 
@@ -180,30 +222,81 @@
 
         <div class="contenido">
 
-            <div class="call-action"> 
+            <div class="call-action">
                 <div id="call-items">
 
-                    
-                    <h4> Estás en el lugar correcto. 
-                    <br> Esta es la comunidad donde compartirás ideas y dudas, <br> probarás nuevos sabores y encontrarás inspiración. 
-                    <br> <br>¡Qué sofrito tan rico y enriquecedor! 
-                    </h4>
+                    <h4>Se parte de la comunidad</h4>
+                    <h1> Comparte, aprende y disfruta <br>
+                        la cocina casera
+                    </h1>
+                    <!--  
+                       Estás en el lugar correcto.
+                        <br> Esta es la comunidad donde compartirás ideas y dudas, <br> probarás nuevos sabores y
+                        encontrarás inspiración.
+                        <br> <br>¡Qué sofrito tan rico y enriquecedor!
+                    -->
                     <button id="botoncall"> Únete </button>
                 </div>
             </div>
         </div>
 
+        <div class="seccion2">
+            ¿Por qué elegir Sofrito?
+        </div>
+
+
+        <div class="cards">
+
+
+
+            <div class="card">
+                <img src="/img/ALanding.png" alt="Caracteristicas">
+                <div class="text">
+                    <h2>Comparte tu pasión</h2>
+                    <p>Publica tus recetas e intercambia consejos</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/BLanding.png" alt="Caracteristicas">
+                <div class="text">
+                    <h2>Conecta con otros cocineros</h2>
+                    <p>Conoce a personas con tus mismos gustos</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/CLanding.png" alt="Caracteristicas">
+                <div class="text">
+                    <h2>Desafíos culinarios diarios</h2>
+                    <p>Participa en retos temáticos creativos</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
         <div class="footer">
             <ul id="txtfooter">
-                <li> Sofrito® 2024 Created by Cocineras  </li>
+                <li> Sofrito® 2024 Created by Cocineras </li>
                 <li> Cookies </li>
                 <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
-              
+
             </ul>
         </div>
 
 
-    </div>
 
 
 
