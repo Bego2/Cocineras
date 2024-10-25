@@ -50,13 +50,15 @@
         .menu-nav {
             display: flex;
             gap: 72px;
-
         }
 
         .menu-nav li :hover {
             font-size: larger;
             font: bold;
-
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+            color: #F15333
         }
 
         .botones {
@@ -64,18 +66,26 @@
             gap: 40px;
             align-items: center;
             padding: 20px;
+
         }
 
 
-        button {
 
+        button {
             padding: 8px;
             padding-left: 16px;
             padding-right: 16px;
             background-color: #64022D;
             border-radius: 20px;
             color: #F6F0E4;
+            transition: background-color 0.3s ease;
         }
+
+        button:hover {
+            background-color: #FFBC39;
+            color: #64022d;
+        }
+
 
         .menu-nav a {
             color: #64022D;
@@ -101,12 +111,26 @@
             justify-content: left;
             align-items: center;
             color: #64022D;
-
+            transition: background-color 0.3s ease;
         }
 
-           h4 {
+        .call-action:hover {
+            background-color: #FFBC39;
+            color: #64022d;
+        }
+
+
+        h4 {
             font-size: large;
             font-weight: 500;
+            color: #64022d;
+        }
+
+        h5 {
+            font-size: large;
+            font-weight: 500;
+            color: #64022d;
+        text-align: center;
         }
 
         #botoncall {
@@ -174,6 +198,7 @@
         h2 {
             font-family: poppins;
             font-weight: 700;
+            line-height: 1.2;
             color: #64022d;
             font-size: medium;
             text-align: center;
@@ -188,6 +213,70 @@
             font-weight: bold;
             padding-top: 40px;
         }
+
+        .seccion3 {
+            background-color: #F6F0E4;
+            text-align: center;
+            color: #33512D;
+            font-size: x-large;
+            font-weight: bold;
+            padding-top: 40px;
+            font-display: 100%;
+        }
+
+        .categorias {
+            background-color: #F6F0E4;
+            display: flex;
+            padding-top: 35px;
+            padding-bottom: 55px;
+        }
+
+        .categorias img {
+            max-width: 100%;
+
+        }
+
+        .categorias img:hover {
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+        }
+
+        .seccion4 {
+            background-color: #F6F0E4;
+            display: flex;
+            padding-bottom: 200px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        h3 {
+            font-family: poppins;
+            font-weight: 700;
+            color: #33512D;
+            font-size: x-large;
+            font-display: 100%;
+            text-align: center;
+        }
+
+
+        .botcrear {
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            text-align: center;
+            background-color: #64022D;
+            border-radius: 20px;
+            color: #F6F0E4;
+            margin-top: 15px;
+            margin-bottom: 50px;
+            transition: background-color 0.3s ease;
+        }
+
+        .botcrear:hover{
+          background-color: #FFBC39;
+          color: #64022D;
+        }
     </style>
 
 </head>
@@ -199,11 +288,11 @@
 
         <div class="header">
 
-            <div class="logo"> <img src="/img/logo.png" alt=""></div>
+            <div class="logo"> <img src="/img/logo.png" alt="sofrito"></div>
 
             <ul class="menu-nav">
                 <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
-                <li> <a href="https://search.brave.com/search?q=w3"> Recetas </a> </li>
+                <li> <a href="/recetas.html"> Recetas </a> </li>
                 <li> <a href="https://search.brave.com/search?q=w3">Foro</a> </li>
                 <li> <a href="https://search.brave.com/search?q=w3"> Eventos </a> </li>
             </ul>
@@ -272,19 +361,50 @@
                     <p>Participa en retos temáticos creativos</p>
                 </div>
             </div>
+        </div>
 
 
 
+        <div class="seccion3">
+            ¿Qué te apetece hacer hoy?
+        </div>
 
+        <div class="categorias">
+            <div class="elementos">
+                <img src="img/1landing.png" alt="desafios">
+            </div>
 
+            <div class="elementos">
+                <img src="img/2landing.png" alt="recetas">
+            </div>
 
+            <div class="elementos">
+                <img src="img/3landing.png" alt="eventos">
+            </div>
 
-
-
-
-
+            <div class="elementos">
+                <img src="img/4landing.png" alt="foro">
+            </div>
 
         </div>
+
+        <div class="seccion4">
+            <div class="action">
+                <div class="text">
+                    <h3>¿Listo para unirte?</h3>
+                    <h5>Forma parte de esta comunidad única y lleva tu amor  <br>por la cocina a otro nivel</h5>
+                </div>
+
+                <div class="botcrear">
+                ¡Crea tu cuenta ahora!
+                </div>
+            </div>
+        </div>
+    
+
+
+
+
 
 
         <div class="footer">
