@@ -33,7 +33,7 @@
             flex-direction: column;
             height: 100vh;
             background-color: #F6F0E4;
-            gap: 20px;
+            /* gap: 20px; */
         }
 
         .header {
@@ -47,14 +47,22 @@
         .menu-nav {
             display: flex;
             gap: 72px;
-            
+
         }
 
-        .menu-nav li :hover{
+        .menu-nav a {
+            text-decoration:none;
+            color: #64022D;
+            font-size: larger;
+            font: bold;
+
+        }
+
+        .menu-nav li :hover {
 
             font-size: larger;
             font: bold;
-            
+
         }
 
         .botones {
@@ -63,10 +71,10 @@
             align-items: center;
 
             padding: 20px;
-            
+
         }
 
-        button{
+        button {
 
             background-color: #64022D;
             padding: 8px;
@@ -77,50 +85,44 @@
 
         }
 
-       
 
-        button :hover{
+
+        button :hover {
             background-color: #FFBC39;
-            ;
         }
 
-        .cabecera{
-
+        .cabecera {
             background-image: url(/img/callfood.png);
             background-size: cover;
             background-position: center;
             width: 100vw;
-            height: 20vh;
+            height: 300px;
             padding: 50px;
-            
-          
-            
-
         }
-        h1{
+
+        h1 {
             display: flex;
             justify-content: center;
             color: #64022D;
         }
 
-        
-        #txt{
+        #txt {
             display: flex;
             justify-content: center;
             color: #64022D;
             font-size: 20px;
         }
-        
 
-        #buscador{
+
+        #buscador {
             display: flex;
-            
+
             background-color: #F6F0E4;
             color: #64022D;
         }
 
 
-        .cards{
+        .cards {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
@@ -128,31 +130,29 @@
             align-items: stretch;
         }
 
-        .card{
+        .card {
 
             flex: 0 0 200px;
             margin: 10px;
-            
+
         }
 
-       
-
-        .card img{
+        .card img {
             max-width: 100%;
             border-radius: 4px;
             margin: 10px;
         }
 
-        .card text{
+        .card text {
             display: flex;
             flex-direction: column;
             padding: 0px 20px 20px;
-            
-            
-        }
-           
 
-        .card-button{
+
+        }
+
+
+        .card-button {
 
             background-color: #64022D;
             padding: 8px;
@@ -162,9 +162,10 @@
             color: #F6F0E4;
 
         }
-            .card-button :hover{
-                background-color: #9f3865;
-            }
+
+        .card-button :hover {
+            background-color: #9f3865;
+        }
 
 
         .footer {
@@ -188,8 +189,6 @@
         #txtfooter a {
             color: #F6F0E4;
         }
-       
-
     </style>
 
 
@@ -207,7 +206,7 @@
 
             <div class="logo">
                 <a href="/index.html">
-                <img src="/img/sofrito-logo.png" alt="Sofrito logo" > 
+                    <img src="/img/sofrito-logo.png" alt="Sofrito logo">
                 </a>
             </div>
 
@@ -220,12 +219,9 @@
 
 
             <ul class="botones">
-                <li id="registro">Mi cuenta</li>
-                <li> <button>Cerrar sesión</button></li>
+                <li id="registro"> Mi cuenta </li>
+                <li> <button> Cerrar sesión </button></li>
             </ul>
-
-
-
             </ul>
 
 
@@ -237,81 +233,79 @@
 
             <div class="cabecera">
                 <h1>Mis recetas</h1>
-                
+
                 <p id="txt">¡Bienvenidx a tu colección personal de sabores!</p>
-              
-                </div>
-            <br><br><br>
+                <!-- <br><br><br> -->
 
-                <button id="buscador">Buscar más recetas</button>
+                <button id="buscador"> Buscar más recetas </button>
                 <br><br>
-
-                <div class="cards">
-
-
-                        <div class="card">
-                            
-                            <img src="/img/carne.webp" alt="Imagen plato">
-                            <div class="text">
-                                <h3>Nombre del plato</h3>
-                                <p>Descripción</p>
-                                <button class="card-button">Ver receta completa</button>
-                            </div>
-
-                        
-                        </div>
+            </div>
+            <div class="cards">
 
 
-                        <div class="card"><img src="/img/verduras.jpg" alt="">
-                            <div class="text">
-                                <h3>Verde que te quiero verde</h3>
-                                <p>Descubre esta sencilla receta con tan solo 3 pasos</p>
-                                <button class="card-button">Ver receta completa</button>
-                            </div>
-                        
-                        </div>
+                <div class="card">
 
+                    <img src="/img/carne.webp" alt="Imagen plato">
+                    <div class="text">
+                        <h3>Nombre del plato</h3>
+                        <p>Descripción</p>
+                        <button class="card-button">Ver receta completa</button>
+                    </div>
 
-                        <div class="card"><img src="/img/macarrones.webp" alt="">
-                            <div class="text">
-                                <h3>Macarrones marinos</h3>
-                                <p>No dejes de probar esta sencilla receta con un sabor explosivo</p>
-                                <button class="card-button">Ver receta completa</button>
-                            </div>
-                        
-                        </div>
-
-
-                        <div class="card"><img src="/img/pollo.jpeg" alt="">
-                            <div class="text">
-                                <h3>Pollo en salsa de sésamo</h3>
-                                <p>Sólo necesitas 3 ingredientes para cocinar esta riquísima receta</p>
-                                <button class="card-button">Ver receta completa</button>
-                            </div>
-                        
-                        </div>
-
-
-                        <div class="card"><img src="/img/pollo1.webp" alt="">
-                            <div class="text">
-                                <h3>Nombre del plato</h3>
-                                <p>Descripción</p>
-                                <button class="card-button">Ver receta completa</button>
-                            </div>
-                        
-                        </div>
-
-
-                        <div class="card"><img src="/img/variado.jpeg" alt="">
-                            <div class="text">
-                                <h3>Nombre del plato</h3>
-                                <p>Descripción</p>
-                                <button class="card-button">Ver receta completa</button>
-                            </div>
-                        
-                        </div>
 
                 </div>
+
+
+                <div class="card"><img src="/img/verduras.jpg" alt="">
+                    <div class="text">
+                        <h3>Verde que te quiero verde</h3>
+                        <p>Descubre esta sencilla receta con tan solo 3 pasos</p>
+                        <button class="card-button">Ver receta completa</button>
+                    </div>
+
+                </div>
+
+
+                <div class="card"><img src="/img/macarrones.webp" alt="">
+                    <div class="text">
+                        <h3>Macarrones marinos</h3>
+                        <p>No dejes de probar esta sencilla receta con un sabor explosivo</p>
+                        <button class="card-button">Ver receta completa</button>
+                    </div>
+
+                </div>
+
+
+                <div class="card"><img src="/img/pollo.jpeg" alt="">
+                    <div class="text">
+                        <h3>Pollo en salsa de sésamo</h3>
+                        <p>Sólo necesitas 3 ingredientes para cocinar esta riquísima receta</p>
+                        <button class="card-button">Ver receta completa</button>
+                    </div>
+
+                </div>
+
+
+                <div class="card"><img src="/img/pollo1.webp" alt="">
+                    <div class="text">
+                        <h3>Nombre del plato</h3>
+                        <p>Descripción</p>
+                        <button class="card-button">Ver receta completa</button>
+                    </div>
+
+                </div>
+
+
+                <div class="card"><img src="/img/variado.jpeg" alt="">
+                    <div class="text">
+                        <h3>Nombre del plato</h3>
+                        <p>Descripción</p>
+                        <button class="card-button">Ver receta completa</button>
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
