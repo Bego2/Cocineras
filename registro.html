@@ -3,28 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de registro/title>
+    <title>Formulario de registro</title>
+
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            text-decoration: none;
+            list-style: none;
+            font-family: poppins;
+        
+        }
+        
+        body{
+        
+            background-color: #F6F0E4;
+           
+        
+        }
+        
+
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #64022D;
+            background-color: #F6F0E4;
+            padding: 20px;
+        }
+
+        .menu-nav {
+            display: flex;
+            gap: 72px;
+        }
+
+        .menu-nav li :hover {
+            font-size: larger;
+            font: bold;
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+            color: #F15333
+        }
+
+        .botones {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+
+
+        button {
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            background-color: #64022D;
+            border-radius: 20px;
+            color: #F6F0E4;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FFBC39;
+            color: #64022d;
+        }
+
+
+        .menu-nav a {
+            color: #64022D;
+        }
+
+
+
+
+        input{
+            display: block;
+            margin: 10px;
+            padding: 8px;
+            border-radius: 8px;
+            font-family: poppins;
+        }
+
+
+        form{
+            padding: 32px;
+        }
+           
+
+        #button{
+            background-color: #64022D;
+            color: #F6F0E4;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        #button :hover{
+
+            font-size: larger;
+            font: bold;
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+            color: #F15333
+
+        }
+       
+
+        .footer {
+            background-color: #64022d;
+            color: #F6F0E4;
+            padding: 20px;
+            display: flex;
+
+        }
+
+        #txtfooter {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-content: center;
+            font-size: small;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        #txtfooter a {
+            color: #F6F0E4;
+        }
+
+        .notificaciones{
+            display: flex;
+            align-items: center;
+        }
+
+        
+
+
+        </style>
+
+       
+
+        
+
+
 </head>
 
 
 
-<style>
 
-*{
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-
-}
-
-body{
-
-    background-color: #F6F0E4;
-    font-style: poppins;
-
-}
-
-</style>
 
 
 
@@ -60,13 +193,17 @@ body{
 
     </div>
 
+<div.container>
 
     <form action="./registro.html" method="get">
-
+        
+        <h2>Datos personales</h2>
         
             <input type="text" name="name"  required placeholder="Nombre">
         
             <input type="text" name="surname" required placeholder="Apellidos">
+
+            <input type="number" name="ageº" required placeholder="Edad">
 
             <input type="text" name="user" required placeholder="Nombre de usuario">
 
@@ -75,14 +212,63 @@ body{
             <input type="password" name="pass" required placeholder="Contraseña">
             <input type="password" name="pass1" required placeholder="Repite tu contraseña">
 
+<br><br><br>    
 
-            <label for="filter"></label> ¿Cuál es el tipo de comida que más te gusta cocinar?</label>
-            <input type="checkbox" name="opc1" id="filter" > Desayunos
-             <input type="checkbox" name="opc2" id="filter" > Repostería
-             <input type="checkbox" name="opc3" id="filter" > Pasta
-             <input type="checkbox" name="opc4" id="filter" > Recetas vegetarianas
+    <h2>Información adicional (opcional)</h2>
+
+        <form action="./registro.html" method="get">
+
+            <input type="text" name="loc" placeholder="Dirección">
+            <input type="text" name="city" placeholder="Ciudad">
+
+            <br>
+
+
+        <div class="notificaciones">
+            <label for="notificaciones"><h4>¿Te gustaría recibir notificaciones sobre nuevas recetas y próximos eventos?</h4></label>
+            <input type="radio" name="opc1" id="notificaciones"> Sí, quiero recibir información 
+
+        </div>
+    <br> <br><br>
+
+    <label for="preferencias"> <h4>¿Cuáles son tus preferencias culinarias?</h4></label>
+    <input type="checkbox" name="prefer" id="preferencias" value="Desayunos"> Desayunos
+    <input type="checkbox" name="prefer" id="preferencias" value="Repostería"> Repostería
+    <input type="checkbox" name="prefer" id="preferencias" value="Pasta"> Pasta
+    <input type="checkbox" name="prefer" id=classreferencias" value="Arroces"> Arroces
+    <input type="checkbox" name="prefer" class="preferencias" value="Comida-vegetariana-vegana"> Comida vegetariana o vegana
+    <input type="checkbox" name="prefer" class="preferencias" value="Carnes-pescados"> Carnes y pescados 
+
+
+    <br><br><br>
+    <input type="submit" name="submit" id="button" value="Regístrate">
+
+
+
+
+
+        </form>
+
+
+    
+
+
+        
              
     </form>
+
+</div.container>
+
+<div class="footer">
+    <ul id="txtfooter">
+        <li> Sofrito® 2024 Created by Cocineras </li>
+        <li> Cookies </li>
+        <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+
+    </ul>
+</div>
+
+
     
 </body>
 </html>
