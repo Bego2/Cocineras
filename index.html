@@ -53,12 +53,11 @@
         }
 
         .menu-nav li :hover {
-            font-size: larger;
             font: bold;
             transform: scale(1.15);
             transition: all 300ms;
             position: relative;
-            color: #F15333
+            color: #F15333;
         }
 
         .botones {
@@ -66,10 +65,7 @@
             gap: 40px;
             align-items: center;
             padding: 20px;
-
         }
-
-
 
         button {
             padding: 8px;
@@ -94,7 +90,6 @@
         .contenido {
             display: flex;
             flex: 1;
-
         }
 
         .call-action {
@@ -127,10 +122,10 @@
         }
 
         h5 {
-            font-size: large;
+            font-size: 14px;
             font-weight: 500;
             color: #64022d;
-        text-align: center;
+            text-align: center;
         }
 
         #botoncall {
@@ -209,16 +204,16 @@
             background-color: #F6F0E4;
             text-align: center;
             color: #64022d;
-            font-size: x-large;
+            font-size: 25px;
             font-weight: bold;
-            padding-top: 40px;
+            padding-top: 80px;
         }
 
         .seccion3 {
             background-color: #F6F0E4;
             text-align: center;
             color: #33512D;
-            font-size: x-large;
+            font-size: 25px;
             font-weight: bold;
             padding-top: 40px;
             font-display: 100%;
@@ -233,7 +228,6 @@
 
         .categorias img {
             max-width: 100%;
-
         }
 
         .categorias img:hover {
@@ -254,7 +248,7 @@
             font-family: poppins;
             font-weight: 700;
             color: #33512D;
-            font-size: x-large;
+            font-size: 20px;
             font-display: 100%;
             text-align: center;
         }
@@ -273,10 +267,61 @@
             transition: background-color 0.3s ease;
         }
 
-        .botcrear:hover{
-          background-color: #FFBC39;
-          color: #64022D;
+        .botcrear:hover {
+            background-color: #FFBC39;
+            color: #64022D;
         }
+
+
+        .reseñas {
+            background-color: #F6F0E4;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+
+        .reseñas h2 {
+            font-size: 25px;
+            margin-bottom: 30px;
+            color: #d35400;
+            text-decoration: underline;
+            text-decoration: #d35400;
+            text-decoration-thickness: 2px;
+        }
+
+        .tarjetas-reseñas {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta-reseña {
+            background-color: #d35400;
+            width: 250px;
+            padding: 20px;
+            box-shadow: 0 4px 8px #00000026;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .estrellas {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .tarjeta-reseña p {
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .tarjeta-reseña h3 {
+            font-size: 16px;
+            color: #64022d;
+        }
+
+
     </style>
 
 </head>
@@ -342,7 +387,7 @@
                 <img src="/img/ALanding.png" alt="Caracteristicas">
                 <div class="text">
                     <h2>Comparte tu pasión</h2>
-                    <p>Publica tus recetas e intercambia consejos</p>
+                    <!--<p>Publica tus recetas e intercambia consejos</p>-->
                 </div>
             </div>
 
@@ -350,7 +395,7 @@
                 <img src="img/BLanding.png" alt="Caracteristicas">
                 <div class="text">
                     <h2>Conecta con otros cocineros</h2>
-                    <p>Conoce a personas con tus mismos gustos</p>
+                    <!--<p>Conoce a personas con tus mismos gustos</p>-->
                 </div>
             </div>
 
@@ -358,7 +403,7 @@
                 <img src="img/CLanding.png" alt="Caracteristicas">
                 <div class="text">
                     <h2>Desafíos culinarios diarios</h2>
-                    <p>Participa en retos temáticos creativos</p>
+                    <!--<p>Participa en retos temáticos creativos</p>-->
                 </div>
             </div>
         </div>
@@ -388,24 +433,46 @@
 
         </div>
 
+
+
+
+        <section class="reseñas">
+            <h2>Opiniones de nuestros usuarios</h2>
+            <div class="tarjetas-reseñas">
+
+                <div class="tarjeta-reseña">
+                    <div class="estrellas">★★★★★</div>
+                    <p>"Excelente plataforma para los amantes de la cocina casera. ¡Muy recomendable!"</p>
+                    <h3>Juan Ruiz</h3>
+                </div>
+
+                <div class="tarjeta-reseña">
+                    <div class="estrellas">★★★★☆</div>
+                    <p>"Me encanta la comunidad y la variedad de recetas que encuentro aquí."</p>
+                    <h3>Luisa Fernández</h3>
+                </div>
+
+                <div class="tarjeta-reseña">
+                    <div class="estrellas">★★★★★</div>
+                    <p>"Sofrito es perfecto para compartir ideas y mejorar mis habilidades culinarias."</p>
+                    <h3>Esteban Romero</h3>
+                </div>
+
+            </div>
+        </section>
+
         <div class="seccion4">
             <div class="action">
                 <div class="text">
                     <h3>¿Listo para unirte?</h3>
-                    <h5>Forma parte de esta comunidad única y lleva tu amor  <br>por la cocina a otro nivel</h5>
+                    <h5>Forma parte de esta comunidad única y lleva tu amor <br>por la cocina a otro nivel</h5>
                 </div>
 
                 <div class="botcrear">
-                ¡Crea tu cuenta ahora!
+                    ¡Crea tu cuenta ahora!
                 </div>
             </div>
         </div>
-    
-
-
-
-
-
 
         <div class="footer">
             <ul id="txtfooter">
@@ -415,6 +482,11 @@
 
             </ul>
         </div>
+
+
+    </div>
+
+
 
 
 
