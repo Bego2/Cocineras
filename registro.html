@@ -31,20 +31,57 @@ body{
 <body>
 
 
+    <div class="header">
+
+        <div class="logo">
+            <a href="/index.html">
+            <img src="/img/sofrito-logo.png" alt="Sofrito logo" > 
+            </a>
+        </div>
+
+        <ul class="menu-nav">
+            <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
+            <li> <a href="https://search.brave.com/search?q=w3"> Recetas </a> </li>
+            <li> <a href="https://search.brave.com/search?q=w3">Foro</a> </li>
+            <li> <a href="https://search.brave.com/search?q=w3"> Eventos </a> </li>
+        </ul>
+
+
+        <ul class="botones">
+            <li id="registro">Mi cuenta</li>
+            <li> <button>Cerrar sesión</button></li>
+        </ul>
+
+
+
+        </ul>
+
+
+
+    </div>
+
+
     <form action="./registro.html" method="get">
 
-        <label for="name">
-            <input type="text" name="name" id="name" required placeholder="Nombre">
-        </label>
-
-        <label for="surname">
-            <input type="text" name="surname" id="surname" required placeholder="Apellidos">
-        </label>
-
         
+            <input type="text" name="name"  required placeholder="Nombre">
+        
+            <input type="text" name="surname" required placeholder="Apellidos">
+
+            <input type="text" name="user" required placeholder="Nombre de usuario">
+
+            <input type="email" name="mail" required placeholder="E-mail">
+
+            <input type="password" name="pass" required placeholder="Contraseña">
+            <input type="password" name="pass1" required placeholder="Repite tu contraseña">
 
 
-
+            <label for="filter"></label> ¿Cuál es el tipo de comida que más te gusta cocinar?</label>
+            <input type="checkbox" name="opc1" id="filter" > Desayunos
+             <input type="checkbox" name="opc2" id="filter" > Repostería
+             <input type="checkbox" name="opc3" id="filter" > Pasta
+             <input type="checkbox" name="opc4" id="filter" > Recetas vegetarianas
+             
     </form>
     
 </body>
