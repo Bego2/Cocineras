@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunidad de cocina, para compartir y practicar">
+    <meta name="keywords" content="Cocina, Cocinar, Recetas, Comunidad, España">
+    <meta name="author" content="Candela, Luján y Begoña">
+    <title>Perfil de Usuario</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+            text-decoration: none;
+            list-style: none;
+            border-style: none;
+        }
+
+
+        body {
+            font-family: poppins;
+            font: size 16px;
+            font-style: normal;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #F6F0E4;
+        }
+
+        .logoblanco {
+            padding: 16px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #F6F0E4;
+            background-color: #d35400;
+            padding: 20px;
+        }
+
+        .fondo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #d35400;
+        }
+
+        .fotoperfil {
+            width: 200px;
+            height: 200px;
+            display: flex;
+            border-radius: 50%;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            background-color: #d35400;
+        }
+
+        .fotoperfil img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .nombre {
+            /*gap: 40px;*/
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        #nombreperfil {
+            padding: 8px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #FFBC39;
+            border-radius: 40px;
+            color: #64022D;
+            font-family: poppins;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+
+        .usuario {
+            color: #64022D;
+            font-family: poppins;
+            font-size: 18px;
+            font-weight: extrabold;
+
+        }
+
+        .seguidoresseguidos {
+            color: #F6F0E4;
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            padding-top: 8px;
+            background-color: #d35400;
+            padding-bottom: 20px;
+        }
+
+
+        .editar {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+
+        #editarperfil {
+            padding: 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+            background-color: #64022D;
+            border-radius: 40px;
+            color: #F6F0E4;
+            font-family: poppins;
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        .seccion2 {
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .seccion2 img{
+            max-width: 100%;
+        }
+
+        .seccion3 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: stretch;
+            background-color: #F6F0E4;
+        }
+
+        .bloques {
+            flex: 0 0 200px;
+            border: none;
+        }
+
+        .bloques img {
+            max-width: 100%;
+        }
+
+        .footer {
+            background-color: #64022d;
+            color: #F6F0E4;
+            padding: 20px;
+            display: flex;
+
+        }
+
+        #txtfooter {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-content: center;
+            font-size: small;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+
+        #txtfooter a {
+            color: #F6F0E4;
+        }
+
+        #txtfooter a:hover {
+            color: #FFBC39;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logoblanco">
+                <a href="index.html"><img src="img/logo.png" alt="sofrito"></a>
+            </div>
+            <!--SUBIR LOGO VERSION BLANCA Y RESUBIR EL LOGO PRINCIPAL-->
+        </div>
+
+        <div class="fondo">
+            <div class="fotoperfil">
+                <img src="img/fotoperfilusuario.png" alt="fotoperfil">
+            </div>
+
+            <div class="nombre">
+                <button id="nombreperfil"> Tomás Sánchez </button>
+            </div>
+
+            <div class="usuario">
+                <h3>@tomassg</h3>
+            </div>
+
+            <div class="seguidoresseguidos">
+                <p>51 seguidores | Siguiendo a 28</p>
+            </div>
+
+        </div>
+
+        <div class="editar">
+            <button id="editarperfil">Editar perfil</button>
+        </div>
+
+        <div class="seccion2">
+            <div class="misdesafios">
+                <img src="img/perfilA.png" alt="mis desafios">
+            </div>
+        </div>
+
+        <div class="seccion3">
+            <div class="bloques">
+                <img src="img/perfilB.png" alt="favoritos">
+            </div>
+
+            <div class="bloques">
+                <img src="img/perfilC.png" alt="guardados">
+            </div>
+
+            <div class="bloques">
+                <img src="img/perfilD.png" alt="futuras recetas">
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="footer">
+            <ul id="txtfooter">
+                <li> Sofrito® 2024 Created by Cocineras </li>
+                <li> Cookies </li>
+                <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+
+            </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
