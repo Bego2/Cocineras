@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comunidad de cocina, para compartir y practicar">
+    <meta name="keywords" content="Cocina, Cocinar, Recetas, Comunidad, España">
+    <meta name="author" content="Candela, Luján y Begoña">
     <title>Acceso</title>
 
 
@@ -15,22 +18,16 @@
             text-decoration: none;
             list-style: none;
             border-style: none;
-
-
         }
 
 
         body {
-            display: flex;
             justify-content: center;
-
             font-family: poppins;
             font-size: medium;
             font-style: normal;
             background-color: #F6F0E4;
             color: #64022D;
-
-
         }
 
         .logo {
@@ -38,11 +35,12 @@
         }
 
         .container {
-            height: 100vh;
+            /*height: 100vh;*/
+            width: 100%;
             display: flex;
             flex-direction: column;
-            gap: 30px;
-            background-color: #F6F0E4;
+            background-color: #FFBC39;
+
         }
 
         .header {
@@ -89,88 +87,86 @@
             color: #64022d;
         }
 
-
         .menu-nav a {
             color: #64022D;
         }
 
-
         .formulario {
-            height: 100vh;
+            /*height: 100vh;*/
             width: 100%;
+            display: flex;
+            align-items: center;
             justify-content: center;
             color: #64022D;
             max-width: 600px;
-
-            padding: 56px;
+            padding: 50px;
             background-color: antiquewhite;
             border-radius: 25px;
+            margin: 100px;
+        }
+
+        h2 {
+            font-size: large;
+            font-weight: 500;
+            color: #64022D;
+            text-align: center;
+        }
+
+        input {
+
+            display: block;
+            margin: 20px;
+            width: 300px;
+            padding: 14px;
+            margin-right: 15px;
+            gap: 10px;
+            border-radius: 25px;
+            font-family: poppins;
+        }
+
+        #button {
+            background-color: #64022D;
+            color: #F6F0E4;
+        }
+
+        #button :hover {
+            background-color: #F15333;
+            transition: all;
+        }
 
 
+        #forget-pass {
+            text-decoration: underline;
+            text-align: center;
+            font-size: small;
+            color: #33512D;
+            padding-left: 80px;
+        }
 
-            input {
+        .footer {
+            background-color: #64022d;
+            color: #F6F0E4;
+            padding: 20px;
+            display: flex;
+        }
 
-                display: block;
+        #txtfooter {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+            align-content: center;
+            font-size: small;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
 
-                margin: 20px;
-                width: 300px;
-                padding: 14px;
-                margin-right: 15px;
-                gap: 10px;
-                border-radius: 25px;
-                font-family: poppins;
-            }
+        #txtfooter a {
+            color: #F6F0E4;
+        }
 
-            #button {
-                background-color: #64022D;
-                color: #F6F0E4;
-            }
-
-            #button :hover {
-                background-color: #F15333;
-                transition: all;
-            }
-
-
-
-            #forget-pass {
-                text-decoration: underline;
-                font-size: small;
-                color: #33512D;
-                padding-left: 30px;
-            }
-
-
-
-
-
-
-
-            .footer {
-                background-color: #64022d;
-                color: #F6F0E4;
-                padding: 20px;
-                display: flex;
-
-            }
-
-            #txtfooter {
-                display: flex;
-                flex: 1;
-                justify-content: space-between;
-                align-content: center;
-                font-size: small;
-                font-weight: 100;
-                letter-spacing: 1px;
-            }
-
-            #txtfooter a {
-                color: #F6F0E4;
-            }
-
-            #txtfooter a:hover {
-                color: #FFBC39;
-            }
+        #txtfooter a:hover {
+            color: #FFBC39;
+        }
     </style>
 
 
@@ -183,7 +179,9 @@
 
         <div class="header">
 
-            <div class="logo"> <img src="/img/logo.png" alt="sofrito"></div>
+            <div class="logo">
+                <a href="index.html"> <img src="/img/logo.png" alt="sofrito"> </a>
+            </div>
 
             <ul class="menu-nav">
                 <li> <a href="index.html"> Desafíos</a> </li>
@@ -191,7 +189,6 @@
                 <li> <a href="index.html">Foro</a> </li>
                 <li> <a href="index.html"> Eventos </a> </li>
             </ul>
-
 
             <ul class="botones">
                 <li id="registro"> <a href="registro.html"> Únete</a></li>
@@ -206,7 +203,7 @@
         <div class="formulario">
 
             <form action="./index.html" method="get">
-                <h2>Ve encendiendo los fogones... accede a tu cuenta y ¡comienza a cocinar!</h2>
+                <h2>Ve encendiendo los fogones... <br> accede a tu cuenta y ¡comienza a cocinar!</h2>
 
                 <input type="email" required placeholder="E-mail">
 
@@ -217,10 +214,8 @@
                 </div>
 
             </form>
-
-
-
         </div>
+
         <div class="footer">
             <ul id="txtfooter">
                 <li> Sofrito® 2024 Created by Cocineras </li>
@@ -230,6 +225,10 @@
             </ul>
 
         </div>
+
+    </div>
+
+
 
 
 
