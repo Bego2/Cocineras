@@ -19,9 +19,9 @@
         }
 
         body {
-
             background-color: #F6F0E4;
         }
+
 
         /* MENU NAV */
         .logo {
@@ -94,7 +94,6 @@
             gap: 40px;
             align-items: center;
             padding: 20px;
-
         }
 
         #registro {
@@ -121,17 +120,12 @@
             background-color: #FFBC39;
         }
 
-
-
-
-
         /* FOOTER */
         .footer {
             background-color: #64022d;
             color: #F6F0E4;
             padding: 20px;
             display: flex;
-
         }
 
         #txtfooter {
@@ -161,7 +155,6 @@
             color: #F15333
         } */
 
-
         /* FORM */
 
         input {
@@ -172,13 +165,17 @@
             gap: 10px;
             border-radius: 25px;
             font-family: poppins;
-
         }
 
 
         form {
             padding: 32px;
             color: #64022D;
+            background-color: #F6F0E4;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            padding-left: 300px;
+            padding-right: 150px;
         }
 
 
@@ -201,8 +198,9 @@
         }
 
         p {
-            font-size: 12px;
+            font-size: 16px;
             margin-bottom: 15px;
+            font-weight: 600;
         }
 
 
@@ -212,7 +210,8 @@
         }
 
         label {
-            font-size: 12px;
+            font-size: 14px;
+            font-weight: 800;
             margin-bottom: 15px;
         }
 
@@ -241,16 +240,16 @@
 
         /* FORMULARIO: NIVEL PRINCIPIANTE-CHEF */
 
-      
+
         #nivel-items {
             display: flex;
             flex-wrap: wrap;
-
+            font-weight: 400;
         }
 
         #nivel-items label {
             font-size: 16px;
-            font-weight: 100;
+            font-weight: 400;
 
         }
 
@@ -273,13 +272,11 @@
             display: flex;
             flex-wrap: wrap;
             margin-bottom: 60px;
-
         }
 
         #estilos-items p {
             font-size: 16px;
-            font-weight: 100;
-
+            font-weight: 400;
         }
 
         .check-items {
@@ -299,23 +296,36 @@
             display: block;
         }
 
-     
-        
-        
+        .botoncrear {
+            padding-bottom: 10px;
+            margin-top: 40px;
+            display: grid;
+            
+        }
+
+        #crearperfil {
+            padding: 8px;
+            padding-left: 40px;
+            padding-right: 40px;
+            background-color: #FFBC39;
+            border-radius: 40px;
+            color: #64022D;
+            font-family: poppins;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        #crearperfil:hover {
+            background-color: #64022d;
+            color: #F6F0E4;
+        }
+
+
     </style>
 
 
-
-
-
-
 </head>
-
-
-
-
-
-
 
 <body>
 
@@ -364,7 +374,7 @@
                     <input type="email" name="mail" required placeholder="E-mail *">
 
                     <input type="password" name="pass" required placeholder="Contraseña *">
-                    <input type="password" name="pass1" required placeholder="Repite tu contraseña *">
+                    <!--<input type="password" name="pass1" required placeholder="Repite tu contraseña *">-->
                 </div>
 
             </div>
@@ -373,7 +383,8 @@
 
                 <h2> Preferencias </h2>
 
-                <p> Tenenos recomendaciones preparadas para ti, queremos conocerte un poco más para poder adaptarnos a
+                <p> Tenenos recomendaciones preparadas para ti, queremos conocerte un poco más <br> para poder
+                    adaptarnos a
                     tus necesidades </p>
 
                 <div class="nivel-form">
@@ -440,10 +451,10 @@
 
                 </div>
 
-          
 
-                
-    
+
+
+
             </div>
 
             <div class="notificaciones">
@@ -453,36 +464,30 @@
                 <p> ¿Te gustaría recibir correos personalizados con las novedades? </p>
 
 
-                    <div id="nivel-items">
+                <div id="nivel-items">
 
-                        <div class="ind-items">
-                            <input type="radio" class="radio-form" name="prefer">
-                            <label> Sí </label>
-                        </div>
+                    <div class="ind-items">
+                        <input type="radio" class="radio-form" name="prefer">
+                        <label> Sí </label>
+                    </div>
 
-                        <div class="ind-items">
-                            <input type="radio" name="prefer" class="radio-form">
-                            <label> No </label>
-                        </div>
+                    <div class="ind-items">
+                        <input type="radio" name="prefer" class="radio-form">
+                        <label> No </label>
+                    </div>
 
                 </div>
 
-            
 
-
-
-            
-
-    </div>
-
+                <div class="botoncrear">
+                    <button id="crearperfil">Crear perfil</button>
+                </div>
 
 
 
 
 
-
-
-    </form>
+            </div>
 
 
 
@@ -491,14 +496,23 @@
 
 
 
-    <div class="footer">
-        <ul id="txtfooter">
-            <li> Sofrito® 2024 Created by Cocineras </li>
-            <li> Cookies </li>
-            <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+        </form>
 
-        </ul>
-    </div>
+
+
+
+
+
+
+
+        <div class="footer">
+            <ul id="txtfooter">
+                <li> Sofrito® 2024 Created by Cocineras </li>
+                <li> Cookies </li>
+                <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+
+            </ul>
+        </div>
 
 
     </div>
