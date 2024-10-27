@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acceso</title>
 
 
-<style>
-   * {
+    <style>
+        * {
             box-sizing: border-box;
             padding: 0px;
             margin: 0px;
             text-decoration: none;
             list-style: none;
             border-style: none;
-            
-            
+
+
         }
 
 
         body {
             display: flex;
             justify-content: center;
-          
+
             font-family: poppins;
             font-size: medium;
             font-style: normal;
             background-color: #F6F0E4;
             color: #64022D;
-            
+
 
         }
 
@@ -94,90 +95,85 @@
         }
 
 
-        .formulario{
+        .formulario {
             height: 100vh;
             width: 100%;
-            justify: center;
+            justify-content: center;
             color: #64022D;
             max-width: 600px;
-        
+
             padding: 56px;
             background-color: antiquewhite;
             border-radius: 25px;
-            
-        }
 
-            form{
-                
+
+
+            input {
+
+                display: block;
+
+                margin: 20px;
+                width: 300px;
+                padding: 14px;
+                margin-right: 15px;
+                gap: 10px;
+                border-radius: 25px;
+                font-family: poppins;
             }
 
-        input{
-            
-            display: block;
-            
-            margin: 20px;
-            width: 300px;
-            padding: 14px;
-            margin-right: 15px;
-            gap: 10px;
-            border-radius: 25px;
-            font-family: poppins;
-        }
-
-            #button{
+            #button {
                 background-color: #64022D;
                 color: #F6F0E4;
             }
 
-            #button :hover{
+            #button :hover {
                 background-color: #F15333;
                 transition: all;
             }
 
-               
-
-                #forget-pass{
-                    text-decoration: underline;
-                    font-size: small;
-                    color: #33512D;
-                    padding-left: 30px;
-                }
 
 
+            #forget-pass {
+                text-decoration: underline;
+                font-size: small;
+                color: #33512D;
+                padding-left: 30px;
+            }
 
 
 
 
 
-                .footer {
-            background-color: #64022d;
-            color: #F6F0E4;
-            padding: 20px;
-            display: flex;
 
-        }
 
-        #txtfooter {
-            display: flex;
-            flex: 1;
-            justify-content: space-between;
-            align-content: center;
-            font-size: small;
-            font-weight: 100;
-            letter-spacing: 1px;
-        }
+            .footer {
+                background-color: #64022d;
+                color: #F6F0E4;
+                padding: 20px;
+                display: flex;
 
-        #txtfooter a {
-            color: #F6F0E4;
-        }
+            }
 
-        #txtfooter a:hover {
-            color: #FFBC39;
-        }
+            #txtfooter {
+                display: flex;
+                flex: 1;
+                justify-content: space-between;
+                align-content: center;
+                font-size: small;
+                font-weight: 100;
+                letter-spacing: 1px;
+            }
 
-        </style>
+            #txtfooter a {
+                color: #F6F0E4;
+            }
 
-       
+            #txtfooter a:hover {
+                color: #FFBC39;
+            }
+    </style>
+
+
 
 
 <body>
@@ -202,40 +198,41 @@
                 <li> <button id="sesion-boton"> Acceso </button> </li>
             </ul>
 
-                </li>
-            
+            </li>
+
         </div>
 
 
         <div class="formulario">
 
             <form action="./index.html" method="get">
-            <h2>Ve encendiendo los fogones... accede a tu cuenta y ¡comienza a cocinar!</h2>
+                <h2>Ve encendiendo los fogones... accede a tu cuenta y ¡comienza a cocinar!</h2>
 
-            <input type="email" required placeholder="E-mail">
+                <input type="email" required placeholder="E-mail">
 
-            <div class="pass">
-            <input type="password" required placeholder="Contraseña">
-            <a href="./acceso.html" id="forget-pass">¿Olvidaste tu contraseña?</a>
-            <input id="button" type="submit" value="Iniciar sesión">
-        </div>
+                <div class="pass">
+                    <input type="password" required placeholder="Contraseña">
+                    <a href="./acceso.html" id="forget-pass">¿Olvidaste tu contraseña?</a>
+                    <input id="button" type="submit" value="Iniciar sesión">
+                </div>
 
-        </form>
+            </form>
 
 
-
-    </div>
-    <div class="footer">
-        <ul id="txtfooter">
-            <li> Sofrito® 2024 Created by Cocineras </li>
-            <li> Cookies </li>
-            <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
-
-        </ul>
 
         </div>
+        <div class="footer">
+            <ul id="txtfooter">
+                <li> Sofrito® 2024 Created by Cocineras </li>
+                <li> Cookies </li>
+                <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
 
-    
-    
+            </ul>
+
+        </div>
+
+
+
 </body>
+
 </html>
