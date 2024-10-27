@@ -13,14 +13,21 @@
             margin: 0px;
             text-decoration: none;
             list-style: none;
+            border-style: none;
+            
+            
         }
 
 
         body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
             font-family: poppins;
             font-size: medium;
             font-style: normal;
             background-color: #F6F0E4;
+            color: #64022D;
 
         }
 
@@ -84,27 +91,55 @@
             color: #64022D;
         }
 
+
+        .formulario{
+
+            width: 100%;
+            justify-content: center;
+            color: #64022D;
+            max-width: 600px;
+            padding: 56px;
+            background-color: antiquewhite;
+            border-radius: 25px;
+            
+        }
+
+
         input{
+
             display: block;
-            margin: 10px;
-            padding: 8px;
-            border-radius: 8px;
+        
+            width: 250px;
+            padding: 14px;
+            margin-right: 15px;
+            gap: 10px;
+            border-radius: 25px;
             font-family: poppins;
         }
 
-        form{
-            padding: 32px;
-        }
+            #button{
+                background-color: #64022D;
+                color: #F6F0E4;
+            }
 
-   
+            #button :hover{
+                background-color: #F15333;
+                transition: all;
+            }
 
-        .contenido{
-            height: 100vh;
-        }
+                #forget-pass{
+                    text-decoration: underline;
+                    font-size: small;
+                    color: #33512D;
+                }
 
 
 
-        .footer {
+
+
+
+
+                .footer {
             background-color: #64022d;
             color: #F6F0E4;
             padding: 20px;
@@ -126,72 +161,68 @@
             color: #F6F0E4;
         }
 
-form #buttonaccess{
-    padding: 8px;
-            padding-left: 56px;
-            padding-right: 56px;
-            background-color: #64022D;
-            border-radius: 20px;
-            color: #F6F0E4;
-            
-}
+        #txtfooter a:hover {
+            color: #FFBC39;
+        }
+
+        </style>
+
+       
 
 
-
-
-</style>
-
-</head>
 <body>
+
 
     <div class="container">
 
         <div class="header">
 
-            <div class="logo"> <img src="/img/logo.png" alt="sofrito"> <a href="/index.html"></a></div>
+            <div class="logo"> <img src="/img/logo.png" alt="sofrito"></div>
 
             <ul class="menu-nav">
-                <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
-                <li> <a href="/recetas.html"> Recetas </a> </li>
-                <li> <a href="https://search.brave.com/search?q=w3">Foro</a> </li>
-                <li> <a href="https://search.brave.com/search?q=w3"> Eventos </a> </li>
+                <li> <a href="index.html"> Desafíos</a> </li>
+                <li> <a href="recetas.html"> Recetas </a> </li>
+                <li> <a href="index.html">Foro</a> </li>
+                <li> <a href="index.html"> Eventos </a> </li>
             </ul>
 
 
             <ul class="botones">
-                <li id="registro"><a href="registro.html"></a>Únete</li>
-                <li> <button>Acceso</button></li>
+                <li id="registro"> <a href="registro.html"> Únete</a></li>
+                <li> <button id="sesion-boton"> Acceso </button> </li>
             </ul>
 
-            </ul>
-
-        </div>
-
-        <div class="contenido">
-
-        <form action="index.html" method="get">
+                </li>
             
-            <h2>Accede a tu cuenta</h2>
-            <br>
-                <input type="email" name="mail" required    placeholder="E-mail">
-                <input type="password" name="pass" required placeholder="Contraseña">
-                <input type="submit" id="buttonaccess" name="button" value="Acceder">
+        </div>
 
-            </form>
+<div class="container">
+        <div class="formulario">
+
+            <form action="./index.html" method="get">
+            <h2>Ve encendiendo los fogones... accede a tu cuenta y ¡comienza a cocinar!</h2>
+
+            <input type="email" required placeholder="E-mail">
+            <input type="password" required placeholder="Contraseña">
+            <a href="./acceso.html" id="forget-pass">¿Olvidaste tu contraseña?</a>
+            <input id="button" type="submit" value="Iniciar sesión">
+
+        </form>
+
+
+
+        <div class="footer">
+            <ul id="txtfooter">
+                <li> Sofrito® 2024 Created by Cocineras </li>
+                <li> Cookies </li>
+                <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+
+            </ul>
+        </div>
 
         </div>
 
-            <div class="footer">
-                <ul id="txtfooter">
-                    <li> Sofrito® 2024 Created by Cocineras </li>
-                    <li> Cookies </li>
-                    <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
     
-                </ul>
-            </div>
-
-
-
     
 </body>
 </html>
