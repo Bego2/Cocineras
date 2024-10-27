@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,25 @@
 
 
     <style>
-
-        *{
+        * {
             box-sizing: border-box;
             margin: 0px;
             padding: 0px;
             text-decoration: none;
             list-style: none;
             font-family: poppins;
-        
+            border-style: none;
         }
-        
-        body{
-        
+
+        body {
+
             background-color: #F6F0E4;
-           
-        
         }
-        
+
+        /* MENU NAV */
+        .logo {
+            padding: 16px;
+        }
 
 
         .header {
@@ -41,13 +43,12 @@
             gap: 72px;
         }
 
-        .menu-nav li :hover {
-            font-size: larger;
+        .menu-nav li:hover {
             font: bold;
             transform: scale(1.15);
             transition: all 300ms;
             position: relative;
-            color: #F15333
+            color: #F15333;
         }
 
         .botones {
@@ -55,12 +56,9 @@
             gap: 40px;
             align-items: center;
             padding: 20px;
-
         }
 
-
-
-        button {
+        #sesion-boton {
             padding: 8px;
             padding-left: 16px;
             padding-right: 16px;
@@ -68,54 +66,66 @@
             border-radius: 20px;
             color: #F6F0E4;
             transition: background-color 0.3s ease;
+            font-family: poppins;
         }
 
-        button:hover {
+        #sesion-boton:hover {
             background-color: #FFBC39;
-            color: #64022d;
+            color: #F15333;
         }
-
 
         .menu-nav a {
             color: #64022D;
         }
 
-
-
-
-        input{
-            display: block;
-            margin: 10px;
-            padding: 8px;
-            border-radius: 20px;
-            font-family: poppins;
-        }
-
-
-        form{
-            padding: 32px;
-        }
-           
-
-        #button{
-            background-color: #64022D;
-            color: #F6F0E4;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
-        #button :hover{
-
+        .menu-nav li:hover {
             font-size: larger;
             font: bold;
             transform: scale(1.15);
             transition: all 300ms;
             position: relative;
-            color: #F15333
 
         }
-       
 
+        /* DERECHA DEL MENU NAV */
+
+        .botones-nav {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            padding: 20px;
+
+        }
+
+        #registro {
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            color: #64022D;
+            font-family: poppins;
+        }
+
+        #sesion-boton {
+            background-color: #64022D;
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 20px;
+            border-style: none;
+            color: #F6F0E4;
+            font-family: poppins;
+        }
+
+        #sesion-boton:hover {
+            color: #F15333;
+            background-color: #FFBC39;
+        }
+
+
+
+
+
+        /* FOOTER */
         .footer {
             background-color: #64022d;
             color: #F6F0E4;
@@ -138,20 +148,165 @@
             color: #F6F0E4;
         }
 
-        .notificaciones{
+        #txtfooter a:hover {
+            color: #FFBC39;
+        }
+
+        /* #button:hover {
+            font-size: medium;
+            font: bold;
+            transform: scale(1.15);
+            transition: all 300ms;
+            position: relative;
+            color: #F15333
+        } */
+
+
+        /* FORM */
+
+        input {
+            display: block;
+            width: 250px;
+            padding: 14px;
+            margin-right: 15px;
+            gap: 10px;
+            border-radius: 25px;
+            font-family: poppins;
+
+        }
+
+
+        form {
+            padding: 32px;
+            color: #64022D;
+        }
+
+
+        #button {
+            background-color: #64022D;
+            color: #F6F0E4;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .notificaciones {
             display: flex;
             align-items: center;
         }
 
+        /* TEXTOS */
 
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+
+        h4 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* FORM: SECCION DATOS PERSONALES */
+
+
+        .datospersonales {
+            margin-bottom: 60px;
+        }
+
+
+        #datos1 {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            gap: 10px;
+        }
+
+        #datos2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+
+        /* FORMULARIO: NIVEL PRINCIPIANTE-CHEF */
+
+      
+        #nivel-items {
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        #nivel-items label {
+            font-size: 16px;
+            font-weight: 100;
+
+        }
+
+        .ind-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 60px;
+        }
+
+        input[type="radio"] {
+            width: 15px;
+            height: 15px;
+            margin-top: 4px;
+        }
+
+
+
+        /* FORMULARIO: ESTILOS DE COCINA (MEX, INDIA ETC) */
+        #estilos-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+
+        }
+
+        #estilos-items p {
+            font-size: 16px;
+            font-weight: 100;
+
+        }
+
+        .check-items {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 100px;
+
+        }
+
+        input[type="checkbox"] {
+            width: 15px;
+            height: 15px;
+            margin-top: 4px;
+        }
+
+        .notificaciones {
+            display: block;
+        }
+
+     
         
-
-
-        </style>
-
-       
-
         
+    </style>
+
+
+
+
 
 
 </head>
@@ -164,119 +319,191 @@
 
 <body>
 
-    <div.container>
+    <div class="container">
 
-    <div class="header">
+        <div class="header">
 
-        <div class="logo">
-            <a href="/index.html">
-            <img src="/img/sofrito-logo.png" alt="Sofrito logo" > 
-            </a>
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="/img/sofrito-logo.png" alt="Sofrito logo">
+                </a>
+            </div>
+
+            <ul class="menu-nav">
+                <li> <a href="index.html"> Desafíos</a> </li>
+                <li> <a href="recetas.html"> Recetas </a> </li>
+                <li> <a href="index.html">Foro </a> </li>
+                <li> <a href="index.html"> Eventos </a> </li>
+            </ul>
+
+            <ul class="botones-nav">
+                <li id="registro"> Mi cuenta </li>
+                <li> <button id="sesion-boton"> Cerrar sesión </button> </li>
+            </ul>
+
         </div>
 
-        <ul class="menu-nav">
-            <li> <a href="https://search.brave.com/search?q=w3">Desafíos</a> </li>
-            <li> <a href="https://search.brave.com/search?q=w3"> Recetas </a> </li>
-            <li> <a href="https://search.brave.com/search?q=w3">Foro</a> </li>
-            <li> <a href="https://search.brave.com/search?q=w3"> Eventos </a> </li>
+
+
+        <form action="./registro.html" method="get">
+
+            <div class="datospersonales">
+
+                <h2> Datos personales</h2>
+
+                <p> Los campos con * son obligatorios y deben rellenarse para completar el formulario </p>
+
+                <div id="datos1">
+                    <input type="text" name="name" required placeholder="Nombre *">
+                    <input type="text" name="surname" required placeholder="Apellidos *">
+                    <input type="number" name="ageº" placeholder="Edad">
+                </div>
+
+                <div id="datos2">
+                    <input type="text" name="user" required placeholder="Nombre de usuario *">
+                    <input type="email" name="mail" required placeholder="E-mail *">
+
+                    <input type="password" name="pass" required placeholder="Contraseña *">
+                    <input type="password" name="pass1" required placeholder="Repite tu contraseña *">
+                </div>
+
+            </div>
+
+            <div class="preferencias">
+
+                <h2> Preferencias </h2>
+
+                <p> Tenenos recomendaciones preparadas para ti, queremos conocerte un poco más para poder adaptarnos a
+                    tus necesidades </p>
+
+                <div class="nivel-form">
+                    <h4> Tu nivel de cocina </h4>
+
+                    <div id="nivel-items">
+
+                        <div class="ind-items">
+                            <input type="radio" class="radio-form" name="prefer">
+                            <label> Principiante </label>
+                        </div>
+
+                        <div class="ind-items">
+                            <input type="radio" name="prefer" class="radio-form">
+                            <label> Intermedio </label>
+                        </div>
+
+                        <div class="ind-items">
+                            <input type="radio" name="prefer" class="radio-form">
+                            <label> Experto </label>
+                        </div>
+
+                        <div class="ind-items">
+                            <input type="radio" name="prefer" class="radio-form">
+                            <label> Chef profesional </label>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="estilos-form">
+
+                    <h4> Estilos de cocina favoritos </h4>
+
+                    <div id="estilos-items">
+
+
+                        <div class="check-items">
+                            <input type="checkbox" name="prefer" value="Desayunos">
+                            <p> Latina </p>
+                        </div>
+
+                        <div class="check-items">
+                            <input type="checkbox" name="prefer" value="Desayunos">
+                            <p> Estadounidense </p>
+                        </div>
+
+                        <div class="check-items">
+                            <input type="checkbox" name="prefer" value="Desayunos">
+                            <p> Africana </p>
+                        </div>
+
+                        <div class="check-items">
+                            <input type="checkbox" name="prefer" value="Desayunos">
+                            <p> Oriental </p>
+                        </div>
+
+                        <div class="check-items">
+                            <input type="checkbox" name="prefer" value="Desayunos">
+                            <p> Europea </p>
+                        </div>
+                    </div>
+
+                </div>
+
+          
+
+                
+    
+            </div>
+
+            <div class="notificaciones">
+
+                <h2> Notificaciones </h2>
+
+                <p> ¿Te gustaría recibir correos personalizados con las novedades? </p>
+
+
+                    <div id="nivel-items">
+
+                        <div class="ind-items">
+                            <input type="radio" class="radio-form" name="prefer">
+                            <label> Sí </label>
+                        </div>
+
+                        <div class="ind-items">
+                            <input type="radio" name="prefer" class="radio-form">
+                            <label> No </label>
+                        </div>
+
+                </div>
+
+            
+
+
+
+            
+
+    </div>
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+    <div class="footer">
+        <ul id="txtfooter">
+            <li> Sofrito® 2024 Created by Cocineras </li>
+            <li> Cookies </li>
+            <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
+
         </ul>
-
-
-        <ul class="botones">
-            <li id="registro">Mi cuenta</li>
-            <li> <button>Cerrar sesión</button></li>
-        </ul>
-
-
-
-        </ul>
-
+    </div>
 
 
     </div>
 
 
-    <form action="./registro.html" method="get">
-        
-        <h2>Datos personales</h2>
-        <br>
-        
-            <input type="text" name="name"  required placeholder="Nombre">
-        
-            <input type="text" name="surname" required placeholder="Apellidos">
-
-            <input type="number" name="ageº" required placeholder="Edad">
-
-            <input type="text" name="user" required placeholder="Nombre de usuario">
-
-            <input type="email" name="mail" required placeholder="E-mail">
-
-            <input type="password" name="pass" required placeholder="Contraseña">
-            <input type="password" name="pass1" required placeholder="Repite tu contraseña">
-
-<br><br><br>    
-
-
-
-    <h2>Información adicional (opcional)</h2>
-    <br>
-
-        <form action="./registro.html" method="get">
-
-            <input type="text" name="loc" placeholder="Dirección">
-            <input type="text" name="city" placeholder="Ciudad">
-
-            <br>
-
-
-        <div class="notificaciones">
-            <label for="notificaciones"><h4>¿Te gustaría recibir notificaciones sobre nuevas recetas y próximos eventos?</h4></label>
-            <input type="radio" name="opc1" id="notificaciones"> Sí, quiero recibir información 
-
-        </div>
-    <br> <br>
-
-    <div class="checkbox">
-    <label for="preferencias"> <h4>¿Cuáles son tus preferencias culinarias?</h4></label>
-    <input type="checkbox" name="prefer" class="preferencias" value="Desayunos"> Desayunos
-    <input type="checkbox" name="prefer" class="preferencias" value="Repostería"> Repostería
-    <input type="checkbox" name="prefer" class="preferencias" value="Pasta"> Pasta
-    <input type="checkbox" name="prefer" class="preferencias" value="Arroces"> Arroces
-    <input type="checkbox" name="prefer" class="preferencias" value="Comida-vegetariana-vegana"> Comida vegetariana o vegana
-    <input type="checkbox" name="prefer" class="preferencias" value="Carnes-pescados"> Carnes y pescados
-    
-</div>
-
-
-    <br><br><br>
-    <input type="submit" name="submit" id="button" value="Regístrate">
-
-
-
-
-
-        </form>
-
-
-    
-
-
-        
-             
-    </form>
-
-</div.container>
-
-<div class="footer">
-    <ul id="txtfooter">
-        <li> Sofrito® 2024 Created by Cocineras </li>
-        <li> Cookies </li>
-        <li> <a href="terminos.html"> Términos & Condiciones</a> </li>
-
-    </ul>
-</div>
-
-
-    
 </body>
+
 </html>
