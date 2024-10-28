@@ -70,7 +70,7 @@
             padding: 20px;
         }
 
-        button {
+        #sesion-boton {
             padding: 8px;
             padding-left: 16px;
             padding-right: 16px;
@@ -78,9 +78,10 @@
             border-radius: 20px;
             color: #F6F0E4;
             transition: background-color 0.3s ease;
+           font-family: poppins; 
         }
 
-        button :hover{
+        button:hover{
             background-color: #FFBC39;
             color: #64022d;
         }
@@ -89,6 +90,9 @@
             color: #64022D;
         }
 
+        #registro a {
+            color: #64022D;
+        }
 
 
         .fondo {
@@ -253,13 +257,34 @@
 
     <div class="container">
 
-
         <div class="header">
+
+            <div class="logo">
+                <a href="index.html"> <img src="/img/logo-blanco.png" alt="sofrito"> </a>
+            </div>
+
+            <ul class="menu-nav">
+                <li> <a href="index.html"> Desafíos</a> </li>
+                <li> <a href="recetas.html"> Recetas </a> </li>
+                <li> <a href="index.html">Foro</a> </li>
+                <li> <a href="index.html"> Eventos </a> </li>
+            </ul>
+
+            <ul class="botones">
+                <!-- <li id="registro"> <a href="registro.html"> Únete</a></li> -->
+                <li> <button id="sesion-boton"> Cerrar sesión </button> </li>
+            </ul>
+
+            </li>
+
+        </div>
+
+        <!-- <div class="header">
             <div class="logoblanco">
                 <a href="index.html"><img src="img/logo-blanco.png" alt="sofrito"> </a>
             </div>
-            <!--SUBIR LOGO VERSION BLANCA Y RESUBIR EL LOGO PRINCIPAL-->
-            <div class="menu-nav">
+            SUBIR LOGO VERSION BLANCA Y RESUBIR EL LOGO PRINCIPAL-->
+            <!-- <div class="menu-nav">
             <ul>
                 <li> <a href="index.html"> Desafíos</a> </li>
                 <li> <a href="recetas.html"> Recetas </a> </li>
@@ -276,7 +301,7 @@
 
             </li>
 
-        </div>
+        </div> -->
 
         <div class="fondo">
             <div class="fotoperfil">
@@ -294,12 +319,13 @@
             <div class="seguidoresseguidos">
                 <p>51 seguidores | Siguiendo a 28</p>
             </div>
-
+            
+            <div class="editar">
+                <button id="editarperfil">Editar perfil</button>
+            </div>
         </div>
 
-        <div class="editar">
-            <button id="editarperfil">Editar perfil</button>
-        </div>
+       
 
         <div class="seccion2">
             <div class="misdesafios">

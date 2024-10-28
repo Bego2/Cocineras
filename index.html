@@ -25,6 +25,7 @@
             font-family: poppins;
             font-size: medium;
             font-style: normal;
+            background-color: #F6F0E4;
 
         }
 
@@ -141,7 +142,7 @@
             margin-top: 15px;
         }
 
-        #botoncall:hover{
+        #botoncall:hover {
             background-color: #F6F0E4;
             color: #33512D;
         }
@@ -223,24 +224,8 @@
         }
 
         /* SECCION 4: RESEÑAS */
-        .seccion4 {
-            background-color: #F6F0E4;
-            display: flex;
-            padding-bottom: 200px;
-            padding: 20px;
-            justify-content: center;
-        }
-
-        h3 {
-            font-family: poppins;
-            font-weight: 700;
-            color: #33512D;
-            font-size: 20px;
-            font-display: 100%;
-            text-align: center;
-        }
-
-
+    
+        /* 
         .botcrear button{
             padding: 8px;
             padding-left: 16px;
@@ -252,12 +237,12 @@
             margin-top: 15px;
             margin-bottom: 50px;
             transition: background-color 0.3s ease;
-        }
+        } */
 
-        .botcrear:hover {
+        /* .botcrear:hover {
             background-color: #FFBC39;
             color: #64022D;
-        }
+        } */
 
 
         .reseñas {
@@ -306,6 +291,49 @@
         .tarjeta-reseña h3 {
             font-size: 16px;
             color: #64022d;
+        }
+
+        /* SECCIÓN 5: C/A CREA TU CUENTA */
+        .seccion5 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding-bottom: 200px;
+            padding: 20px;
+        }
+
+        h3 {
+            font-family: poppins;
+            font-weight: 700;
+            color: #33512D;
+            font-size: 20px;
+            font-display: 100%;
+            text-align: center;
+        }
+
+        #crea-cuenta {
+            background-color: #33512D;
+            color: #F6F0E4;
+            border-radius: 20px;
+            /* transition: background-color 0.3s ease; */
+
+            font-family: poppins;
+            margin-top: 15px;
+            margin-bottom: 40px;
+
+            padding: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        .seccion5 a {
+            display: flex;
+            justify-content: center;
+        }
+
+        h5 {
+            color: #33512D;
         }
 
         /* FOOTER */
@@ -358,11 +386,11 @@
 
             <ul class="botones">
                 <li id="registro"> <a href="registro.html"> Únete</a></li>
-                <li><a href="acceso.html"><button id="sesion-boton">  Acceso </button></a>  </li>
+                <li><a href="acceso.html"><button id="sesion-boton"> Acceso </button></a> </li>
             </ul>
 
-                </li>
-            
+            </li>
+
 
         </div>
 
@@ -375,7 +403,10 @@
                     <h1> Comparte, aprende y disfruta <br>
                         la cocina casera
                     </h1>
-                    <a href="registro.html"><button id="botoncall" > Únete </button></a><button id="botoncall" ></a>
+
+                    <a href="registro.html"> 
+                    <button id="botoncall"> Únete </button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -463,22 +494,29 @@
             </div>
         </section>
 
-        <div class="seccion4">
+        <div class="seccion5">
             <div class="action">
-                <div class="text">
-                    <h3>¿Listo para unirte?</h3>
-                    <h5>Forma parte de esta comunidad única y lleva tu amor <br>por la cocina a otro nivel</h5>
-                </div>
 
-                <div class="botcrear">
-                    <a href="registro.html" class="crear"><button>¡Crea tu cuenta ahora!</button></a></li>
-                </div>
+                <h3>¿Listo para unirte?</h3>
+                <h5>Forma parte de esta comunidad única y lleva tu amor <br>por la cocina a otro nivel</h5>
+
+                <a href="registro.html">
+                    <button id="crea-cuenta"> Crea tu cuenta </button>
+                </a>
+
+                <!-- <li> <a href="registro.html"> <button id="crea-cuenta"> Crea tu cuenta </button></a> </li> -->
+
+                <!-- <div class="botcrear">
+                    <a href="registro.html" class="crear"> <button>¡Crea tu cuenta ahora!</button></a></li>
+                </div> -->
+
+
             </div>
         </div>
 
 
 
-        
+
         <div class="footer">
             <ul id="txtfooter">
                 <li> Sofrito® 2024 Created by Cocineras </li>
