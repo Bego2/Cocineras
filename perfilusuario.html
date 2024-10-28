@@ -180,15 +180,26 @@
             font-weight: 500;
         }
 
-        .seccion2 {
+        .seccion2  {
+            max-width: 100%;
             display: flex;
             align-items: stretch;
             justify-content: center;
+         
         }
 
-        .seccion2 img{
-            max-width: 100%;
+        .seccion2  :hover{
+            transform: scale(1.05);
+            transition: all 300ms;
+            position: relative;
+            
+          
+            
+            
+
         }
+        
+        
 
         .seccion3 {
             display: flex;
@@ -196,6 +207,7 @@
             align-items: stretch;
             justify-content: center;
             background-color: #F6F0E4;
+            
         }
 
         .bloques {
@@ -207,17 +219,23 @@
             max-width: 100%;
         }
 
-        .seccion2 img:hover{
-            transform: scale(1.05);
-            transition: all 300ms;
-            position: relative;
-        }
 
 
         .seccion3 img:hover{
             transform: scale(1.05);
             transition: all 300ms;
             position: relative;
+        }
+
+
+        #favs{
+            background-image: url(/img/perfilA.png);
+            
+        }
+
+        #favs :hover{
+            transition: all 300ms;
+            background-image: url(/img/reversaperfilA.png);
         }
 
 
@@ -328,22 +346,21 @@
        
 
         <div class="seccion2">
-            <div class="misdesafios">
-                <img src="img/perfilA.png" alt="mis desafios">
-            </div>
+            <img src="/img/perfilA.png" alt="">
+            
         </div>
 
         <div class="seccion3">
             <div class="bloques">
-                <img src="img/perfilB.png" alt="favoritos">
+            <img id="favs" src="img/perfilB.png" alt="favoritos">
             </div>
 
             <div class="bloques">
-                <img src="img/perfilC.png" alt="guardados">
+                <img id="shared" src="img/perfilC.png" alt="guardados">
             </div>
 
             <div class="bloques">
-                <img src="img/perfilD.png" alt="futuras recetas">
+                <img id="recipe" src="img/perfilD.png" alt="futuras recetas">
             </div>
 
         </div>
